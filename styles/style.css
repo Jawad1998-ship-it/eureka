@@ -6130,3 +6130,11 @@ Page-navigation Area Style*/
 .invalid-feedback {
   font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
+
+.left-0 {
+  left: 0;
+  z-index: 10;
+}
+.bg-darker {
+  background: rgba(0,0,0,0.5);
+}

@@ -49,7 +49,7 @@ const Services = () => {
             >
               <div className="single-services">
                 <span className="flaticon-liver"></span>
-                <h3>X-Ray Department</h3>
+                <h3>Radiography Department</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore dolore
@@ -73,7 +73,7 @@ const Services = () => {
             >
               <div className="single-services">
                 <span className="flaticon-kidney"></span>
-                <h3>ECG cardiogram</h3>
+                <h3>Physical Department</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore dolore
@@ -89,77 +89,6 @@ const Services = () => {
               </div>
             </div>
 
-            <div 
-              className="col-lg-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="1200"
-            >
-              <div className="single-services">
-                <span className="flaticon-heart"></span>
-                <h3>Physical Examination</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
-                </p>
-
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
-
-                <div className="services-shape">
-                  <img src="/img/services-card-shape.png" alt="Image" />
-                </div>
-              </div>
-            </div>
-
-            <div 
-              className="col-lg-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1200"
-            >
-              <div className="single-services">
-                <span className="flaticon-brain"></span>
-                <h3>Marketing Department</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
-                </p>
-
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
-
-                <div className="services-shape">
-                  <img src="/img/services-card-shape.png" alt="Image" />
-                </div>
-              </div>
-            </div>
-
-            <div 
-              className="col-lg-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="1200"
-            >
-              <div className="single-services">
-                <span className="flaticon-walker"></span>
-                <h3>ECG</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
-                </p>
-
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
-
-                <div className="services-shape">
-                  <img src="/img/services-card-shape.png" alt="Image" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
+import ImagePopup from "./ImagePopup";
 
 const OurWorks = () => {
+  const [openImagePopup, setOpenImagePopup] = useState(false);
+
   return (
     <>
       <div className="our-work-area ptb-100">
@@ -42,7 +45,7 @@ const OurWorks = () => {
             modules={[Pagination, Autoplay]}
             className="our-work-slide"
           >
-            <SwiperSlide>
+            <SwiperSlide onClick={() => setOpenImagePopup(previous => previous = true)}>
               <div className="single-work">
                 <img src="/img/work1.jpg" alt="Image" />
 
@@ -142,6 +145,8 @@ const OurWorks = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+
+          <ImagePopup />
         </div>
 
         <div className="shape">

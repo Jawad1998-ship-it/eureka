@@ -116,7 +116,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                     >
                       <i className="flaticon-support"></i>
-                      <h3>24/7 Advanced Care</h3>
+                      <h3>Online Application</h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do
