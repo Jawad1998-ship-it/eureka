@@ -2,22 +2,42 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import TopHeader from "./TopHeader";
+import axios from "axios";
 
 const Navbar = () => {
   // Add active class
+  const settingURL = `http://localhost:5000/api/settings`;
+
   const [currentPath, setCurrentPath] = useState("");
+  const [data, setData] = useState({});
+
   const router = useRouter();
   // console.log(router.asPath)
-
-  useEffect(() => {
-    setCurrentPath(router.asPath);
-  }, [router]);
+  const getData = () => {
+    axios
+      .get(settingURL)
+      .then((response) => {
+        const allData = response.data.data[0];
+        console.log(allData);
+        setData(allData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const [menu, setMenu] = React.useState(true);
 
   const toggleNavbar = () => {
     setMenu(!menu);
   };
+
+  useEffect(() => {
+    getData();
+    setCurrentPath(router.asPath);
+  }, [router]);
+
+  console.log("data", data);
 
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
@@ -48,7 +68,7 @@ const Navbar = () => {
               <nav className="navbar navbar-expand-md navbar-light">
                 <div className="container">
                   <Link href="/" className="navbar-brand">
-                    <img src="/img/logo.png" alt="logo" />
+                    <img src="/img/edmc-logo.jpeg" style={{width: '60px', height: '60px', objectFit: 'contain'}} alt="logo" />
                   </Link>
 
                   <button
@@ -520,8 +540,11 @@ const Navbar = () => {
 
                   <div className="others-option">
                     <div className="subscribe">
-                      <Link href="/contact" className="default-btn">
-                        Get A Quote
+                      <Link
+                        href="http://localhost:3001/medical-verification"
+                        className="default-btn"
+                      >
+                        Medical Verification
                       </Link>
                     </div>
                   </div>

@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import axios from "axios";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const settingURL = `http://localhost:5000/api/settings`;
+  const [data, setData] = useState({});
+
+  const getData = () => {
+    axios
+      .get(settingURL)
+      .then((response) => {
+        const allData = response.data.data[0];
+        setData(allData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
 
   return (
     <>
@@ -10,7 +30,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6">
-              <div 
+              <div
                 className="single-widget"
                 data-aos="fade-in"
                 data-aos-delay="100"
@@ -63,7 +83,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-2 col-md-6">
-              <div 
+              <div
                 className="single-widget"
                 data-aos="fade-in"
                 data-aos-delay="200"
@@ -94,7 +114,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div 
+              <div
                 className="single-widget open-time"
                 data-aos="fade-in"
                 data-aos-delay="300"
@@ -123,7 +143,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3 col-md-6">
-              <div 
+              <div
                 className="single-widget contact"
                 data-aos="fade-in"
                 data-aos-delay="400"
@@ -148,7 +168,8 @@ const Footer = () => {
                   <li>
                     <i className="bx bx-location-plus"></i>
                     <span>Address:</span>
-                    41/5 Purana Palton, Box Culvert Road (1st floor) Dhaka-1000, Bangladesh
+                    41/5 Purana Palton, Box Culvert Road (1st floor) Dhaka-1000,
+                    Bangladesh
                   </li>
                 </ul>
               </div>
@@ -161,10 +182,7 @@ const Footer = () => {
         <div className="container">
           <div className="copy-right">
             <p>
-              Copyright &copy; {currentYear} Corf Designed by{" "}
-              <a href="https://envytheme.com/" target="blank">
-                EnvyTheme
-              </a>
+              Copyright {data?.copyright?.split(";")[1]}
             </p>
           </div>
         </div>
