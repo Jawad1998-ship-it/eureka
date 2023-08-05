@@ -23,7 +23,6 @@ const Footer = () => {
     getData();
   }, []);
 
-
   return (
     <>
       <footer className="footer-top-area f-bg pt-100 pb-70">
@@ -37,14 +36,22 @@ const Footer = () => {
                 data-aos-duration="1200"
               >
                 <Link href="/">
-                  <img src="/img/logo.png" alt="Image" />
+                  <img
+                    src="/img/edmc-logo.jpeg"
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      objectFit: "contain",
+                    }}
+                    alt="Image"
+                  />
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor, sit amet earum consectetur adipisicing
-                  elit. Cupiditate rerum quidem fugiat sapiente! Iusto quae
-                  perspiciatis, repudiandae ipsam minus et ex, aliquid dolor
-                  molestias, earum enim officiis porro obcaecati.
+                  Eureka Diagnostic & Medical Center, have been operation since
+                  1993. That means, for over 18 years, we have been able to
+                  provide our patients and referring physicians with accurate,
+                  efficient and quality healthcare.
                 </p>
 
                 <div className="social-area">
@@ -55,26 +62,16 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com/" target="_blank">
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
                       <a href="https://www.linkedin.com/" target="_blank">
                         <i className="bx bxl-linkedin"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.facebyoutubeook.com/"
+                        href="https://www.youtube.com/"
                         target="_blank"
                       >
                         <i className="bx bxl-youtube"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank">
-                        <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                   </ul>
@@ -91,24 +88,9 @@ const Footer = () => {
               >
                 <h3>Departments</h3>
                 <ul>
-                  <li>
-                    <Link href="#">Surgery & Radiology</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Children Care</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Orthopedics</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Nuclear Magnetic</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Eye Treatment</Link>
-                  </li>
-                  <li>
-                    <Link href="#">X-Ray</Link>
-                  </li>
+                  <li>Pathology</li>
+                  <li>Physiology</li>
+                  <li>Radiology</li>
                 </ul>
               </div>
             </div>
@@ -123,19 +105,11 @@ const Footer = () => {
                 <h3>Opening Hours</h3>
                 <ul>
                   <li>
-                    <span>Mon-Tue:</span>
-                    <span className="right">6:00 AM - 10:00 PM</span>
+                    <span>Saturday-Thrusday:</span>
+                    <span className="right">9:00 AM - 6:00 PM</span>
                   </li>
                   <li>
-                    <span>Wed-Thu:</span>
-                    <span className="right">6:00 AM - 10:00 PM</span>
-                  </li>
-                  <li>
-                    <span>Fry:</span>
-                    <span className="right">6:00 AM - 04:00 PM</span>
-                  </li>
-                  <li>
-                    <span>Sun:</span>
+                    <span>Friday:</span>
                     <span className="right">Closed</span>
                   </li>
                 </ul>
@@ -181,9 +155,7 @@ const Footer = () => {
       <div className="footer-bottom-area">
         <div className="container">
           <div className="copy-right">
-            <p>
-              Copyright {data?.copyright?.split(";")[1]}
-            </p>
+            <p>Copyright {data?.copyright?.split(";")[1]}</p>
           </div>
         </div>
       </div>

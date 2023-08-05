@@ -68,7 +68,15 @@ const Navbar = () => {
               <nav className="navbar navbar-expand-md navbar-light">
                 <div className="container">
                   <Link href="/" className="navbar-brand">
-                    <img src="/img/edmc-logo.jpeg" style={{width: '60px', height: '60px', objectFit: 'contain'}} alt="logo" />
+                    <img
+                      src="/img/edmc-logo.jpeg"
+                      style={{
+                        width: "60px",
+                        height: "60px",
+                        objectFit: "contain",
+                      }}
+                      alt="logo"
+                    />
                   </Link>
 
                   <button
@@ -196,6 +204,16 @@ const Navbar = () => {
                           }`}
                         >
                           About
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          href="/messages/"
+                          className={`nav-link ${
+                            currentPath == "/messages/" && "active"
+                          }`}
+                        >
+                          Messages
                         </Link>
                       </li>
 
@@ -414,12 +432,22 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
+                          href="/videos/"
+                          className={`nav-link ${
+                            currentPath == "/videos/" && "active"
+                          }`}
+                        >
+                          Videos
+                        </Link>
+                      </li>
+
+                      <li className="nav-item">
+                        {/* <Link
                           href="doctors-2"
-                          // onClick={(e) => e.preventDefault()}
                           className="nav-link"
                         >
-                          Doctors {/* <i className="bx bx-plus"></i> */}
-                        </Link>
+                          Doctors 
+                        </Link> */}
 
                         {/* <ul className="dropdown-menu">
                           <li className="nav-item">
@@ -524,7 +552,6 @@ const Navbar = () => {
                           </li>
                         </ul>
                       </li> */}
-
                       <li className="nav-item">
                         <Link
                           href="/contact/"

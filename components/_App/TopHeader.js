@@ -12,9 +12,6 @@ const TopHeader = () => {
         const allData = response.data.data[0];
         console.log(allData);
         setData(allData);
-        setVatId(allData.vat_type);
-        // formData.append('name', data.name)
-        // console.log(formData)
       })
       .catch((error) => {
         console.log(error);
@@ -34,7 +31,7 @@ const TopHeader = () => {
               <ul className="header-content-left">
                 <li>
                   <i className="bx bx-time"></i>
-                  Mon-Fri 9am-5pm
+                  Mon-Fri 9AM-5PM
                 </li>
                 <li>
                   <a href="tel:+822456974" className="d-flex gap-2">
@@ -48,7 +45,7 @@ const TopHeader = () => {
                 <li>
                   <a href="mailto:hello@info.com">
                     <i className="bx bxs-paper-plane"></i>
-                    Email: hello@info.com
+                    Email: info@eurekamedicalbd.com
                   </a>
                 </li>
               </ul>
@@ -62,13 +59,8 @@ const TopHeader = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.twitter.com/" target="_blank">
-                    <i className="bx bxl-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/" target="_blank">
-                    <i className="bx bxl-pinterest-alt"></i>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i className="bx bxl-youtube"></i>
                   </a>
                 </li>
                 <li>
