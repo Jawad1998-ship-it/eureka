@@ -8,16 +8,16 @@ const Services = () => {
         <div className="container">
           <div className="section-title">
             <span className="top-title">Our Services</span>
-            <h2>Our Healthcare Service</h2>
+            <h2>Comprehensive Diagnostic Services</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis
-              vel consequatur tempora atque blanditiis exercitationem incidunt,
-              alias corporis quam assumenda dicta, temporibus.
+              Your Health, Our Priority - Discover cutting-edge diagnostics at
+              Eureka Diagnostic Center. Our precise results and dedicated care
+              ensure your well-being and peace of mind.
             </p>
           </div>
 
           <div className="row justify-content-center">
-            <div 
+            <div
               className="col-lg-4 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -27,8 +27,8 @@ const Services = () => {
                 <span className="flaticon-man"></span>
                 <h3>Pathology Department</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
+                  Accurate analysis, rapid results. Trust our pathology services
+                  for precise diagnoses you can rely on.
                 </p>
 
                 <Link href="/service-details" className="read-more">
@@ -41,7 +41,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div 
+            <div
               className="col-lg-4 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -51,8 +51,8 @@ const Services = () => {
                 <span className="flaticon-liver"></span>
                 <h3>Radiography Department</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
+                  Advanced imaging solutions. Our radiography department
+                  delivers clear insights for better healthcare decisions.
                 </p>
 
                 <Link href="/service-details" className="read-more">
@@ -65,7 +65,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div 
+            <div
               className="col-lg-4 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="300"
@@ -75,8 +75,8 @@ const Services = () => {
                 <span className="flaticon-kidney"></span>
                 <h3>Physical Department</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore
+                  Comprehensive care, expert guidance. Experience tailored
+                  treatments and therapies in our physical department.
                 </p>
 
                 <Link href="/service-details" className="read-more">
@@ -88,7 +88,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
