@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
 import PageBanner from "../components/Common/PageBanner";
-import Subscribe from "../components/Common/Subscribe";
 import Footer from "../components/_App/Footer";
-import DoctorsStyleOne from "../components/Common/DoctorsStyleOne";
 import FunFactStyleOne from "../components/Common/FunFactStyleOne";
 
 const About = () => {
@@ -43,35 +41,22 @@ const About = () => {
             <div className="col-lg-6">
               <div className="about-content">
                 <span className="top-title">About Us</span>
-                <h2>We are trusted The Best Certificate Healthcare</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                <h2>Eureka Diagnostic & Medical Center</h2>
+                <p className="fw-bold">
+                  We have been in operation since 1993. That means, for over 18
+                  years, we have been able to provide our patients and referring
+                  physicians with accurate, efficient and quality healthcare.
+                  Our qualified radiologists and compassionate, certified
+                  technologists understand the value of your time. We are
+                  committed to the fastest turnaround on reports and access to
+                  view patient files online for physician offices. At other area
+                  imaging facilities, you may experience a delay in your
+                  appointment time due to the emergency room and inpatients –
+                  not at Eureka Diagnostic & Medical Centers. Here, you come
+                  first with centralized, flexible scheduling. For your added
+                  convenience, both of our locations offer convenient, surface
+                  level parking for easy access in and out of our centers.
                 </p>
-
-                <ul>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Scientific skills for getting a better result
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>A good environment for work
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Professional doctors
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Digital laboratory
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Emergency services
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -82,117 +67,30 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="about-img">
-                <img src="/img/about-two/about-two1.png" alt="Image" />
-
-                <div className="shape-1">
-                  <img src="/img/about-two/about-two-shape2.png" alt="Image" />
-                </div>
+              <div className="about-content">
+                <span className="top-title fs-2">Our Mission</span>
+                <p className="fs-4">
+                  Take leadership through integration of technology and
+                  expertise with higher standards of diagnostic, efficient
+                  delivery systems at affordable prices
+                </p>
               </div>
             </div>
 
             <div className="col-lg-6">
               <div className="about-content">
-                <span className="top-title">About Corona</span>
-                <h2>How COV-19 Spreads</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                <span className="top-title fs-2">Our Vision</span>
+                <p className="fs-4">
+                  Creating higher standards in healthcare by focusing on
+                  preventive medicine to achieve the ‘most preferred’ diagnostic
+                  center status
                 </p>
-                <strong>
-                  The best way to prevent illness is to avoid being exposed to
-                  this virus.
-                </strong>
-
-                <ul>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Clean and disinfect frequently touched surfaces
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Avoid touching your eyes, nose, and mouth
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Clean your hands with a hand sanitizer
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Cover coughs and sneezes
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Stay home if you’re sick
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Wear a facemask if sick
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Cover your mouth and nose
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <DoctorsStyleOne />
-
-      <div className="about-area four abouts-six">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="about-content ml-auto">
-                <span className="top-title">About Us</span>
-                <h2>Free Medical Camp Importance & Objectives</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
-
-                <ul>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Free Registration of Deserving Cases for Surgeries
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Free Hepatitis B & C Screening Test
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Free Consultation & Medicine
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Free Blood Pressure Test
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Free Diabetes Test
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Childbirth
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-6 pr-0">
-              <div className="about-img about-img-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <FunFactStyleOne />
       <Footer />
     </>

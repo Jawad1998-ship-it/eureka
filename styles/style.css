@@ -6147,6 +6147,10 @@ Page-navigation Area Style*/
     opacity: 1;
   }
 }
+.page-title-area {
+  padding-top: 174px;
+  padding-bottom: 80px;
+}
 /* header area style */
 .header-area.fixed-top {
   z-index: 2;

@@ -48,21 +48,24 @@ const MainBanner = () => {
                     </p>
 
                     <div
-                      className="banner-btn"
+                      className="banner-btn d-flex gap-2"
                       data-aos="fade-up"
                       data-aos-delay="400"
                       data-aos-duration="1200"
                     >
-                      <Link href="/appointment" className="default-btn">
+                      <Link
+                        href="http://localhost:3001/medical-verification"
+                        className="default-btn"
+                      >
                         Medical Verification
                       </Link>
 
-                      <div
-                        onClick={() => setOpen(true)}
-                        className="default-btn active popup-youtube"
+                      <Link
+                        href="http://localhost:3001/signup"
+                        className="default-btn"
                       >
                         Patient Registration
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -91,8 +94,8 @@ const MainBanner = () => {
               <div className="first-facility-area">
                 <div className="row justify-content-center">
                   <div className="col-lg-4 col-sm-6">
-                    <div 
-                      className="first-facility-item" 
+                    <div
+                      className="first-facility-item"
                       data-aos="fade-in"
                       data-aos-delay="100"
                       data-aos-duration="1200"
@@ -106,8 +109,8 @@ const MainBanner = () => {
                   </div>
 
                   <div className="col-lg-4 col-sm-6">
-                    <div 
-                      className="first-facility-item" 
+                    <div
+                      className="first-facility-item"
                       data-aos="fade-in"
                       data-aos-delay="200"
                       data-aos-duration="1200"
@@ -121,8 +124,8 @@ const MainBanner = () => {
                   </div>
 
                   <div className="col-lg-4 col-sm-6">
-                    <div 
-                      className="first-facility-item" 
+                    <div
+                      className="first-facility-item"
                       data-aos="fade-in"
                       data-aos-delay="300"
                       data-aos-duration="1200"
