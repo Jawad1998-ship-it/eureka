@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import axios from "axios";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const settingURL = `http://localhost:5000/api/settings`;
+  const [data, setData] = useState({});
+
+  const getData = () => {
+    axios
+      .get(settingURL)
+      .then((response) => {
+        const allData = response.data.data[0];
+        setData(allData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <>
@@ -10,21 +29,29 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6">
-              <div 
+              <div
                 className="single-widget"
                 data-aos="fade-in"
                 data-aos-delay="100"
                 data-aos-duration="1200"
               >
                 <Link href="/">
-                  <img src="/img/logo.png" alt="Image" />
+                  <img
+                    src="/img/edmc-logo.jpeg"
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      objectFit: "contain",
+                    }}
+                    alt="Image"
+                  />
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor, sit amet earum consectetur adipisicing
-                  elit. Cupiditate rerum quidem fugiat sapiente! Iusto quae
-                  perspiciatis, repudiandae ipsam minus et ex, aliquid dolor
-                  molestias, earum enim officiis porro obcaecati.
+                  Eureka Diagnostic & Medical Center, have been operation since
+                  1993. That means, for over 18 years, we have been able to
+                  provide our patients and referring physicians with accurate,
+                  efficient and quality healthcare.
                 </p>
 
                 <div className="social-area">
@@ -35,26 +62,16 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com/" target="_blank">
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
                       <a href="https://www.linkedin.com/" target="_blank">
                         <i className="bx bxl-linkedin"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.facebyoutubeook.com/"
+                        href="https://www.youtube.com/"
                         target="_blank"
                       >
                         <i className="bx bxl-youtube"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank">
-                        <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                   </ul>
@@ -63,7 +80,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-2 col-md-6">
-              <div 
+              <div
                 className="single-widget"
                 data-aos="fade-in"
                 data-aos-delay="200"
@@ -71,30 +88,15 @@ const Footer = () => {
               >
                 <h3>Departments</h3>
                 <ul>
-                  <li>
-                    <Link href="#">Surgery & Radiology</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Children Care</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Orthopedics</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Nuclear Magnetic</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Eye Treatment</Link>
-                  </li>
-                  <li>
-                    <Link href="#">X-Ray</Link>
-                  </li>
+                  <li>Pathology</li>
+                  <li>Physiology</li>
+                  <li>Radiology</li>
                 </ul>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div 
+              <div
                 className="single-widget open-time"
                 data-aos="fade-in"
                 data-aos-delay="300"
@@ -103,19 +105,11 @@ const Footer = () => {
                 <h3>Opening Hours</h3>
                 <ul>
                   <li>
-                    <span>Mon-Tue:</span>
-                    <span className="right">6:00 AM - 10:00 PM</span>
+                    <span>Saturday-Thrusday:</span>
+                    <span className="right">9:00 AM - 6:00 PM</span>
                   </li>
                   <li>
-                    <span>Wed-Thu:</span>
-                    <span className="right">6:00 AM - 10:00 PM</span>
-                  </li>
-                  <li>
-                    <span>Fry:</span>
-                    <span className="right">6:00 AM - 04:00 PM</span>
-                  </li>
-                  <li>
-                    <span>Sun:</span>
+                    <span>Friday:</span>
                     <span className="right">Closed</span>
                   </li>
                 </ul>
@@ -123,7 +117,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3 col-md-6">
-              <div 
+              <div
                 className="single-widget contact"
                 data-aos="fade-in"
                 data-aos-delay="400"
@@ -148,7 +142,8 @@ const Footer = () => {
                   <li>
                     <i className="bx bx-location-plus"></i>
                     <span>Address:</span>
-                    41/5 Purana Palton, Box Culvert Road (1st floor) Dhaka-1000, Bangladesh
+                    41/5 Purana Palton, Box Culvert Road (1st floor) Dhaka-1000,
+                    Bangladesh
                   </li>
                 </ul>
               </div>
@@ -160,12 +155,7 @@ const Footer = () => {
       <div className="footer-bottom-area">
         <div className="container">
           <div className="copy-right">
-            <p>
-              Copyright &copy; {currentYear} Corf Designed by{" "}
-              <a href="https://envytheme.com/" target="blank">
-                EnvyTheme
-              </a>
-            </p>
+            <p>Copyright {data?.copyright?.split(";")[1]}</p>
           </div>
         </div>
       </div>

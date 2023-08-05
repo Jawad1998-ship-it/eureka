@@ -6130,3 +6130,9 @@ Page-navigation Area Style*/
 .invalid-feedback {
   font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
+
+
+.page-title-area {
+  padding-top: 174px;
+  padding-bottom: 80px;
+}
