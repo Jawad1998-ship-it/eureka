@@ -23,20 +23,20 @@ const MainBanner = () => {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="banner-text">
-                    <span
+                    {/* <span
                       data-aos="fade-up"
                       data-aos-delay="100"
                       data-aos-duration="1200"
                     >
                       Smarter Service Care
-                    </span>
+                    </span> */}
 
                     <h1
                       data-aos="fade-up"
                       data-aos-delay="200"
                       data-aos-duration="1200"
                     >
-                      We are Committed to Your Best Health
+                      Welcome to Eureka Diagnostic Center
                     </h1>
 
                     <p
@@ -44,9 +44,7 @@ const MainBanner = () => {
                       data-aos-delay="300"
                       data-aos-duration="1200"
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua gravida. Risus commodo.
+                      Your Path to Health & Wellness - At Eureka Diagnostic Center, we are dedicated to providing you with exceptional diagnostic services that prioritize your well-being. With state-of-the-art technology and a team of experienced professionals, we deliver accurate results and personalized care. Trust us to be your partner on the journey to a healthier, happier life.
                     </p>
 
                     <div
@@ -105,8 +103,7 @@ const MainBanner = () => {
                       <i className="flaticon-care"></i>
                       <h3>Special Service</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
+                      Customized care for exceptional patient experience.
                       </p>
                     </div>
                   </div>
@@ -119,10 +116,9 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                     >
                       <i className="flaticon-support"></i>
-                      <h3>24/7 Advanced Care</h3>
+                      <h3>Online Application</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
+                      Effortless appointments at your fingertips.
                       </p>
                     </div>
                   </div>
@@ -137,8 +133,7 @@ const MainBanner = () => {
                       <i className="flaticon-online-learning"></i>
                       <h3>Get Result Online</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
+                      Instant access to your diagnostic reports online.
                       </p>
                     </div>
                   </div>

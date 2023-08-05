@@ -19,8 +19,8 @@ const NewsStyleOne = () => {
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6">
               <div className="single-blog">
-                <Link href="/blog-details">
-                  <img src="/img/blog/blog1.jpg" alt="Image" />
+                <Link href="/blog-details" className="blog-thumbnail">
+                  <img src="/img/blog-one.jpg" alt="Image" />
                 </Link>
 
                 <span>10 May 2020</span>
@@ -32,7 +32,7 @@ const NewsStyleOne = () => {
                   </ul>
 
                   <Link href="/blog-details">
-                    <h3>250+ Medical Tips We just had to share</h3>
+                    <h3>SPEECH AT STRATOSPHERE HOTEL & CASINO CONVENTION HALL IN LAS VEGAS USA 2014</h3>
                   </Link>
 
                   <Link href="/blog-details" className="read-more">
@@ -44,8 +44,8 @@ const NewsStyleOne = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="single-blog">
-                <Link href="/blog-details">
-                  <img src="/img/blog/blog2.jpg" alt="Image" />
+                <Link href="/blog-details" className="blog-thumbnail">
+                  <img src="/img/blog-two.jpg" alt="Image" />
                 </Link>
 
                 <span>11 May 2020</span>
@@ -57,7 +57,7 @@ const NewsStyleOne = () => {
                   </ul>
 
                   <Link href="/blog-details">
-                    <h3>What Can I Do To Prevent Myself & prevent Disease</h3>
+                    <h3>BEST QUALITY LEADERSHIP AWARD FROM DAVID BREDFORD OF EUROPEAN SOCIETY FOR QUALITY RESEARCH (ESQR)</h3>
                   </Link>
 
                   <Link href="/blog-details" className="read-more">
@@ -69,8 +69,8 @@ const NewsStyleOne = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="single-blog">
-                <Link href="/blog-details">
-                  <img src="/img/blog/blog3.jpg" alt="Image" />
+                <Link href="/blog-details" className="blog-thumbnail">
+                  <img src="/img/blog-three.jpg" alt="Image" />
                 </Link>
 
                 <span>13 May 2020</span>
@@ -82,7 +82,7 @@ const NewsStyleOne = () => {
                   </ul>
 
                   <Link href="/blog-details">
-                    <h3>CCU For Emergency Services & Medical support</h3>
+                    <h3>NEWS ON ITTAFAK</h3>
                   </Link>
 
                   <Link href="/blog-details" className="read-more">

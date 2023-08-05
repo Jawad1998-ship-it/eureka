@@ -67,7 +67,7 @@ const Services2 = () => {
                 <i className="flaticon-care"></i>
                 <h3>Special Service</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                Customized care for exceptional patient experience.
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@ const Services2 = () => {
                 <i className="flaticon-support"></i>
                 <h3>Online Application</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                Effortless appointments at your fingertips.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Services2 = () => {
                 <i className="flaticon-online-learning"></i>
                 <h3>Get Result Online</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                Instant access to your diagnostic reports online.
                 </p>
               </div>
             </div>

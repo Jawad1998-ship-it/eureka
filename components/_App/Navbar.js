@@ -495,6 +495,117 @@ const Navbar = () => {
                           </li>
                         </ul> */}
                       </li>
+                      <li className="nav-item">
+                        <Link
+                          href="photo-gallery"
+                          // onClick={(e) => e.preventDefault()}
+                          className="nav-link"
+                        >
+                          Photo Gallery {/* <i className="bx bx-plus"></i> */}
+                        </Link>
+
+                        {/* <ul className="dropdown-menu">
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-1/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-1/" && "active"
+                              }`}
+                            >
+                              Doctors Style One
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-2/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-2/" && "active"
+                              }`}
+                            >
+                              Doctors Style Two
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-3/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-3/" && "active"
+                              }`}
+                            >
+                              Doctors Style Three
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctor-details/"
+                              className={`nav-link ${
+                                currentPath == "/doctor-details/" && "active"
+                              }`}
+                            >
+                              Doctors Details
+                            </Link>
+                          </li>
+                        </ul> */}
+                      </li>
+
+                      <li className="nav-item">
+                        <Link
+                          href="certifications"
+                          // onClick={(e) => e.preventDefault()}
+                          className="nav-link"
+                        >
+                          Certifications {/* <i className="bx bx-plus"></i> */}
+                        </Link>
+
+                        {/* <ul className="dropdown-menu">
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-1/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-1/" && "active"
+                              }`}
+                            >
+                              Doctors Style One
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-2/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-2/" && "active"
+                              }`}
+                            >
+                              Doctors Style Two
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctors-3/"
+                              className={`nav-link ${
+                                currentPath == "/doctors-3/" && "active"
+                              }`}
+                            >
+                              Doctors Style Three
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/doctor-details/"
+                              className={`nav-link ${
+                                currentPath == "/doctor-details/" && "active"
+                              }`}
+                            >
+                              Doctors Details
+                            </Link>
+                          </li>
+                        </ul> */}
+                      </li>
 
                       {/* <li className="nav-item">
                         <Link

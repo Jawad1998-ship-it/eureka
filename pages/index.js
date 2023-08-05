@@ -27,14 +27,16 @@ const Index = () => {
 
       <Services />
 
-      <DoctorsStyleOne />
+      {/* <DoctorsStyleOne /> */}
 
       <OurWorks />
 
-      <FunFactStyleOne />
+      <NewsStyleOne />
 
-      <AppointmentForm />
-      <TestimonialStyleOne />
+      {/* <FunFactStyleOne /> */}
+
+      {/* <AppointmentForm /> */}
+      {/* <TestimonialStyleOne /> */}
       <Footer />
     </>
   );
