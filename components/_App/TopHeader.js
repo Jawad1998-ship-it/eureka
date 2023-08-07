@@ -10,7 +10,6 @@ const TopHeader = () => {
       .get(settingURL)
       .then((response) => {
         const allData = response.data.data[0];
-        console.log(allData);
         setData(allData);
       })
       .catch((error) => {

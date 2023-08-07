@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { blogs } from "../../data/data";
 
-const BlogSidebar = () => {
+const BlogSidebar = ({ id }) => {
   return (
     <>
       <div className="widget-area" id="secondary">
@@ -27,22 +28,26 @@ const BlogSidebar = () => {
         <div className="widget widget-peru-posts-thumb">
           <h3 className="widget-title">Popular Posts</h3>
           <div className="post-wrap">
-            <div className="item">
-              <Link href="/blog-details" className="thumb">
-                <span className="fullimage cover bg1" role="img"></span>
-              </Link>
-              <div className="info">
-                <span className="time">April 20, 2020</span>
-                <h4 className="title usmall">
-                  <Link href="/blog-details">
-                    250+ Medical Tips We just had to share
+            {blogs
+              .filter((blog) => blog.id !== parseInt(id) && blog)
+              .map((blog) => (
+                <div className="item">
+                  <Link href={`/blogs/${blog.id}`} className="thumb">
+                    <span className="fullimage cover" role="img" style={{backgroundImage: `url('${blog.thumbnail}')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></span>
                   </Link>
-                </h4>
-              </div>
-              <div className="clear"></div>
-            </div>
+                  <div className="info">
+                    <span className="time">April 20, 2020</span>
+                    <h4 className="title usmall">
+                      <Link href={`/blogs/${blog.id}`}>
+                        250+ Medical Tips We just had to share
+                      </Link>
+                    </h4>
+                  </div>
+                  <div className="clear"></div>
+                </div>
+              ))}
 
-            <div className="item">
+            {/* <div className="item">
               <Link href="/blog-details" className="thumb">
                 <span className="fullimage cover bg2" role="img"></span>
               </Link>
@@ -85,7 +90,7 @@ const BlogSidebar = () => {
                 </h4>
               </div>
               <div className="clear"></div>
-            </div>
+            </div> */}
           </div>
         </div>
 

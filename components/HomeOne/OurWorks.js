@@ -176,10 +176,10 @@ const OurWorks = () => {
               <div className="single-work">
                 <img src="/img/certificate-four.jpg" alt="Image" />
 
-                <h3 className="work-title">
+                <h6 className="work-title">
                   {/* <i className="flaticon-cardiology"></i> */}
                   Trade License
-                </h3>
+                </h6>
 
                 <div className="work-content-wrap">
                   <div className="work-content">
@@ -214,7 +214,7 @@ const OurWorks = () => {
                 <img src="/img/certificate-five.jpg" alt="Image" />
 
                 <h6 className="work-title">
-                  <i className="flaticon-doll"></i>
+                  {/* <i className="flaticon-doll"></i> */}
                   Pathological-License
                 </h6>
 
@@ -251,7 +251,7 @@ const OurWorks = () => {
                 <img src="/img/certificate-six.jpg" alt="Image" />
 
                 <h6 className="work-title">
-                  <i className="flaticon-cardiology"></i>
+                  {/* <i className="flaticon-cardiology"></i> */}
                   Licence-for-X-Ray
                 </h6>
 
@@ -288,7 +288,7 @@ const OurWorks = () => {
                 <img src="/img/certificate-seven.jpg" alt="Image" />
 
                 <h6 className="work-title">
-                  <i className="flaticon-cardiology"></i>
+                  {/* <i className="flaticon-cardiology"></i> */}
                   RCOS Certificate
                 </h6>
 

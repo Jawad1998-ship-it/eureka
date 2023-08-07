@@ -24,7 +24,7 @@ const AboutUs = () => {
                 </div>
               </div> */}
               <div className="about-img">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rW7BbIdMqFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rW7BbIdMqFQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                   <div className="shape-1">
                     <img src="/img/about/about-shape-1.png" alt="Image" height="100%" />
