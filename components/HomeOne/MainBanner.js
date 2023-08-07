@@ -60,14 +60,14 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                     >
                       <Link
-                        href="http://localhost:3001/medical-verification"
+                        href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
                         className="default-btn"
                       >
                         Medical Verification
                       </Link>
 
                       <Link
-                        href="http://localhost:3001/signup"
+                        href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`}
                         className="default-btn"
                       >
                         Patient Registration

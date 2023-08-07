@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const settingURL = `http://localhost:5000/api/settings`;
+  const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
   const [data, setData] = useState({});
 
   const getData = () => {

@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Navbar = () => {
   // Add active class
-  const settingURL = `http://localhost:5000/api/settings`;
+  const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
 
   const [currentPath, setCurrentPath] = useState("");
   const [data, setData] = useState({});
@@ -686,7 +686,7 @@ const Navbar = () => {
                   <div className="others-option">
                     <div className="subscribe">
                       <Link
-                        href="http://localhost:3001/medical-verification"
+                        href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
                         className="default-btn"
                       >
                         Medical Verification

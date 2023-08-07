@@ -8,7 +8,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 
 const Package = () => {
-  const packageURL = `http://localhost:5000/api/package`;
+  const packageURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/package`;
 
   const [data, setData] = useState();
   const [investigation, setInvestigation] = useState([]);
@@ -36,7 +36,6 @@ const Package = () => {
     const dataArray = data?.investigationNames.split(", ");
     setInvestigation(dataArray);
   }, [data]);
-
 
   return (
     <>

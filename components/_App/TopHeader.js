@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const TopHeader = () => {
-  const settingURL = `http://localhost:5000/api/settings`;
+  const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
   const [data, setData] = useState({});
 
   const getData = () => {

@@ -7,7 +7,7 @@ import Link from "next/link";
 import axios from "axios";
 
 const HealthPackage = () => {
-  const packageURL = `http://localhost:5000/api/package`;
+  const packageURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/package`;
 
   const [data, setData] = useState([]);
 
