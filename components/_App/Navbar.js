@@ -195,7 +195,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="/about/"
+                          href="/about"
                           className={`nav-link ${
                             currentPath == "/about/" && "active"
                           }`}
@@ -205,12 +205,22 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                          href="/messages/"
+                          href="/messages"
                           className={`nav-link ${
                             currentPath == "/messages/" && "active"
                           }`}
                         >
                           Messages
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          href="/health-packages"
+                          className={`nav-link ${
+                            currentPath == "/health-packages/" && "active"
+                          }`}
+                        >
+                          Health Packages
                         </Link>
                       </li>
 
@@ -373,7 +383,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="services-2"
+                          href="/services-2"
                           // onClick={(e) => e.preventDefault()}
                           className="nav-link"
                         >
@@ -429,7 +439,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="/videos/"
+                          href="/videos"
                           className={`nav-link ${
                             currentPath == "/videos/" && "active"
                           }`}
