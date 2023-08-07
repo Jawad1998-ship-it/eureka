@@ -18,7 +18,6 @@ const Navbar = () => {
       .get(settingURL)
       .then((response) => {
         const allData = response.data.data[0];
-        console.log(allData);
         setData(allData);
       })
       .catch((error) => {
@@ -36,8 +35,6 @@ const Navbar = () => {
     getData();
     setCurrentPath(router.asPath);
   }, [router]);
-
-  console.log("data", data);
 
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
