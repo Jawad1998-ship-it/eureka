@@ -21,13 +21,13 @@ const Videos = () => {
         <div className="container">
           <div className="section-title">
             <span className="top-title">Our Videos</span>
-            <h2>Video Description</h2>
+            <h4>Watch the highlights of the prestigious  Award Ceremonies</h4>
           </div>
           <div className="row gap-2 w-100">
             <div className="d-flex flex-wrap gap-3 align-items-center justify-content-center">
               <iframe
                 width="550"
-                height="320"
+                height="310"
                 src="https://www.youtube.com/embed/e0AAswffrFI"
                 title="YouTube video player"
                 frameborder="0"
@@ -36,7 +36,7 @@ const Videos = () => {
               ></iframe>
               <iframe
                 width="550"
-                height="320"
+                height="310"
                 src="https://www.youtube.com/embed/rW7BbIdMqFQ"
                 title="YouTube video player"
                 frameborder="0"
@@ -45,7 +45,7 @@ const Videos = () => {
               ></iframe>
               <iframe
                 width="550"
-                height="320"
+                height="310"
                 src="https://www.youtube.com/embed/e2yZ2f3uEmM"
                 title="YouTube video player"
                 frameborder="0"
