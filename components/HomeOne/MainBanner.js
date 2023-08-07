@@ -44,7 +44,13 @@ const MainBanner = () => {
                       data-aos-delay="300"
                       data-aos-duration="1200"
                     >
-                      Your Path to Health & Wellness - At Eureka Diagnostic Center, we are dedicated to providing you with exceptional diagnostic services that prioritize your well-being. With state-of-the-art technology and a team of experienced professionals, we deliver accurate results and personalized care. Trust us to be your partner on the journey to a healthier, happier life.
+                      Your Path to Health & Wellness - At Eureka Diagnostic
+                      Center, we are dedicated to providing you with exceptional
+                      diagnostic services that prioritize your well-being. With
+                      state-of-the-art technology and a team of experienced
+                      professionals, we deliver accurate results and
+                      personalized care. Trust us to be your partner on the
+                      journey to a healthier, happier life.
                     </p>
 
                     <div
@@ -102,9 +108,7 @@ const MainBanner = () => {
                     >
                       <i className="flaticon-care"></i>
                       <h3>Special Service</h3>
-                      <p>
-                      Customized care for exceptional patient experience.
-                      </p>
+                      <p>Customized care for exceptional patient experience.</p>
                     </div>
                   </div>
 
@@ -117,9 +121,7 @@ const MainBanner = () => {
                     >
                       <i className="flaticon-support"></i>
                       <h3>Online Application</h3>
-                      <p>
-                      Effortless appointments at your fingertips.
-                      </p>
+                      <p>Effortless appointments at your fingertips.</p>
                     </div>
                   </div>
 
@@ -132,9 +134,7 @@ const MainBanner = () => {
                     >
                       <i className="flaticon-online-learning"></i>
                       <h3>Get Result Online</h3>
-                      <p>
-                      Instant access to your diagnostic reports online.
-                      </p>
+                      <p>Instant access to your diagnostic reports online.</p>
                     </div>
                   </div>
                 </div>
