@@ -85,8 +85,9 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                     >
                       <img
-                        src="/img/home-one/home-one-banner.png"
+                        src="/img/banner.png"
                         alt="Image"
+                        style={{ height: "600px", width: "600px", objectFit: "contain"}}
                       />
                     </div>
 
