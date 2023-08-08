@@ -20,7 +20,7 @@ const Package = () => {
     axios
       .get(`${packageURL}/${id}`)
       .then((response) => {
-        setData(response.data.data);
+        setData(response?.data?.data);
       })
       .catch((err) => console.log(err));
   };
@@ -33,7 +33,7 @@ const Package = () => {
   }, [router.isReady]);
 
   useEffect(() => {
-    const dataArray = data?.investigationNames.split(", ");
+    const dataArray = data?.investigationNames?.split(", ");
     setInvestigation(dataArray);
   }, [data]);
 
