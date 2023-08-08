@@ -1,5 +1,4 @@
 import React from "react";
-import Head from 'next/Head'
 import Navbar from "../components/_App/Navbar";
 import MainBanner from "../components/HomeOne/MainBanner";
 import Facilities from "../components/HomeOne/Facility";
