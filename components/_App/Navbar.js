@@ -59,17 +59,19 @@ const Navbar = () => {
       <header className="header-area fixed-top">
         <TopHeader />
 
-        <div className="nav-area">
+        <div
+          className="nav-area bg-dark bg-gradient
+"
+        >
           <div id="navbar" className="navbar-area">
             <div className="main-nav">
               <nav className="navbar navbar-expand-md navbar-light">
                 <div className="container">
                   <Link href="/" className="navbar-brand">
                     <img
-                      src="/img/edmc-logo.jpeg"
+                      src="/img/logo.png"
                       style={{
-                        width: "60px",
-                        height: "60px",
+                        height: "38px",
                         objectFit: "contain",
                       }}
                       alt="logo"

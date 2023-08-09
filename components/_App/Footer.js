@@ -57,7 +57,10 @@ const Footer = () => {
                 <div className="social-area">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/" target="_blank">
+                      <a
+                        href="https://www.facebook.com/770650982987141?ref=embed_page"
+                        target="_blank"
+                      >
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
@@ -67,10 +70,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.youtube.com/"
-                        target="_blank"
-                      >
+                      <a href="https://www.youtube.com/" target="_blank">
                         <i className="bx bxl-youtube"></i>
                       </a>
                     </li>

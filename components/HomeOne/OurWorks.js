@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
 import ImagePopup from "./ImagePopup";
+import "swiper/swiper-bundle.min.css"; // Import Swiper styles
+import SwiperCore, { Autoplay, Pagination } from "swiper"; // Import Swiper core and required modules
+
+SwiperCore.use([Autoplay, Pagination]);
 
 const OurWorks = () => {
   const [openImagePopup, setOpenImagePopup] = useState({
@@ -49,6 +52,43 @@ const OurWorks = () => {
             modules={[Pagination, Autoplay]}
             className="our-work-slide"
           >
+            <SwiperSlide
+              onClick={() =>
+                setOpenImagePopup((previous) => {
+                  previous = {
+                    ...previous,
+                    open: true,
+                    src: "/img/certificate-eight.jpg",
+                    caption: "Incineration of Wastage Syringe",
+                  };
+                  return previous;
+                })
+              }
+            >
+              <div className="single-work">
+                <img src="/img/certificate-eight.jpg" alt="Image" />
+
+                <h6 className="work-title">
+                  {/* <i className="flaticon-kidney"></i> */}
+                  Incineration of Wastage Syringe
+                </h6>
+
+                <div className="work-content-wrap">
+                  <div className="work-content">
+                    <h3>Incineration of Wastage Syringe</h3>
+                    {/* <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod.
+                    </p>
+
+                    <Link href="/service-details" className="read-more">
+                      Details <i className="bx bx-plus"></i>
+                    </Link> */}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide
               onClick={() =>
                 setOpenImagePopup((previous) => {
@@ -319,6 +359,44 @@ const OurWorks = () => {
 
         <div className="shape">
           <img src="/img/shape/work-shape.png" alt="Image" />
+        </div>
+      </div>
+      <div className="d-flex slide-container">
+        <div className="slide-wrapper">
+          <div className="slide">
+            <img
+              src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag.jpg"
+              alt="Image 1"
+            />
+          </div>
+
+          <div className="slide">
+            <img
+              src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag2.jpg"
+              alt="Image 2"
+            />
+          </div>
+
+          <div className="slide">
+            <img
+              src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag3.jpg"
+              alt="Image 2"
+            />
+          </div>
+
+          <div className="slide">
+            <img
+              src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag4.jpg"
+              alt="Image 2"
+            />
+          </div>
+
+          <div className="slide">
+            <img
+              src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag5.jpg"
+              alt="Image 2"
+            />
+          </div>
         </div>
       </div>
     </>

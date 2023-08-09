@@ -6,76 +6,61 @@ const AboutUs = () => {
     <>
       <div className="about-area py-130">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              {/* <div className="about-img">
-                <img src="/img/about/about1.jpg" alt="Image" />
+          <div className="row align-items-start">
+            <div className="col-lg-4 d-md-flex flex-md-column">
+              <div className="about-img">
+                <iframe
+                  height="315"
+                  src="https://www.youtube.com/embed/rW7BbIdMqFQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  style={{width: "100%"}}
+                ></iframe>
 
                 <div className="shape-1">
-                  <img src="/img/about/about-shape-1.png" alt="Image" />
+                  <img
+                    src="/img/about/about-shape-1.png"
+                    alt="Image"
+                    height="100%"
+                  />
                 </div>
 
                 <div className="shape-2">
-                  <img src="/img/about/about-shape-2.png" alt="Image" />
+                  <img
+                    src="/img/about/about-shape-2.png"
+                    alt="Image"
+                    height="100%"
+                  />
                 </div>
-
-                <div className="shape-3">
-                  <img src="/img/about/about-shape-3.png" alt="Image" />
-                </div>
-              </div> */}
-              <div className="about-img">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rW7BbIdMqFQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-
-                  <div className="shape-1">
-                    <img src="/img/about/about-shape-1.png" alt="Image" height="100%" />
-                  </div>
-
-                  <div className="shape-2">
-                    <img src="/img/about/about-shape-2.png" alt="Image" height="100%" />
-                  </div>
 
                 <div className="shape-3">
                   <img src="/img/about/about-shape-3.png" alt="Image" />
                 </div>
               </div>
             </div>
-
-            <div className="col-lg-6">
+            <div className="col-lg-4 d-flex flex-column gap-3 align-items-center justify-content-center">
+              <div className="about-content w-50">
+                Medicine is the branch of health science and the sector of
+                public life concerned with maintaining or restoring human health
+                through the study, diagnosis, treatment and possible prevention
+                of disease and injury. It is both an area of knowledge a science
+                of body systems, their diseases and treatment and the applied
+                practice of that knowledge.
+              </div>
+              <Link className="text-end w-50" href="/about">Read More...</Link>
+              <Link target="_blank" href="https://eurekamedicalbd.com:2096/">
+                <img
+                  src="/img/Web-Mail.jpg"
+                  width="200px"
+                  height="200px"
+                  style={{objectFit: 'contain'}}
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="col-lg-4">
               <div className="about-content">
-                {/* <span className="top-title">About Us</span>
-                <h2>We are trusted The Best Certificate Healthcare</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
-
-                <ul>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Scientific skills for getting a better result
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>A good environment for work
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Professional doctors
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Digital laboratory
-                  </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
-                    Emergency services
-                  </li>
-                </ul>
-
-                <Link href="/about" className="default-btn">
-                  About Us
-                </Link> */}
                 <p>
                   Eureka Diagnostic & Medical Center, have been operation since
                   1993. That means, for over 18 years, we have been able to
