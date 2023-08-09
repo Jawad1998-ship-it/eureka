@@ -28,7 +28,7 @@ const Footer = () => {
       <footer className="footer-top-area f-bg pt-100 pb-70">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-2 col-md-6">
               <div
                 className="single-widget"
                 data-aos="fade-in"
@@ -65,12 +65,10 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/" target="_blank">
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/" target="_blank">
+                      <a
+                        href="https://www.youtube.com/@eurekamedical7315"
+                        target="_blank"
+                      >
                         <i className="bx bxl-youtube"></i>
                       </a>
                     </li>
@@ -94,8 +92,35 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-2">
+              <div
+                className="single-widget"
+                data-aos="fade-in"
+                data-aos-delay="200"
+                data-aos-duration="1200"
+              >
+                <h3>Other Links</h3>
+                <ul>
+                  <li>
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
+                    >
+                      Medical Verification
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="http://eurekamedicalbd.com:2095/">
+                      {" "}
+                      Web Mail
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="http://mohfw.gov.bd/">Ministry of Health</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3  col-md-6">
               <div
                 className="single-widget open-time"
                 data-aos="fade-in"

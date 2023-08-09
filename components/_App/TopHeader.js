@@ -53,18 +53,13 @@ const TopHeader = () => {
             <div className="col-lg-2 col-md-2 col-sm-12 text-end text-sm-center">
               <ul className="header-content-right text-center gap-1">
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/770650982987141?ref=embed_page" target="_blank">
                     <i className="bx bxl-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/" target="_blank">
+                  <a href="https://www.youtube.com/@eurekamedical7315" target="_blank">
                     <i className="bx bxl-youtube"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank">
-                    <i className="bx bxl-instagram"></i>
                   </a>
                 </li>
               </ul>
