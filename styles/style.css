@@ -842,14 +842,14 @@ Nav Area Style
 Banner Area Style
 ======================================================*/
 .main-banner-area {
-  background-image: url("/img/slideshow2-compressor.jpg");
+  /* background-image: url("/img/slideshow2-compressor.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 940px;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   overflow: hidden;
 }
 .main-banner-area::before {
@@ -6683,9 +6683,26 @@ Page-navigation Area Style*/
   100%{transform: translateX(-100%);}
 }
 
-/* media query to enable animation for only those who want it */
-@media (prefers-reduced-motion: no-preference) {
-  .marquee{
-      animation: marquee 25s linear infinite;
-  }
+
+.swiper .swiper-wrapper .swiper-slide .slider-inner {
+  position: relative;
+  height: 940px;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-inner .banner-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-inner .banner-text h1 {
+  font-size: 60px;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

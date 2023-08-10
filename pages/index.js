@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
 import MainBanner from "../components/HomeOne/MainBanner";
+import MainBannerCopy from "../components/HomeOne/MainBannerCopy";
 import Facilities from "../components/HomeOne/Facility";
 import AboutUs from "../components/HomeOne/AboutUs";
 import Services from "../components/HomeOne/Services";
@@ -19,11 +20,13 @@ const Index = () => {
     <>
       <Navbar />
 
-      <MainBanner />
+      <MainBannerCopy />
 
       {/* <Facilities /> */}
 
       <AboutUs />
+
+      {/* <MainBannerCopy /> */}
 
       <Services />
 
