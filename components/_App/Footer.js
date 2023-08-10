@@ -27,8 +27,8 @@ const Footer = () => {
     <>
       <footer className="footer-top-area f-bg pt-100 pb-70">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-2 col-md-6">
+          <div className="row" style={{ flexWrap: 'wrap'}}>
+            <div className="col-lg-2">
               <div
                 className="single-widget"
                 data-aos="fade-in"
@@ -77,7 +77,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-6">
+            <div className="col-lg-2">
               <div
                 className="single-widget"
                 data-aos="fade-in"
@@ -115,12 +115,33 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link href="https://eurekamedicalbd.com/android-app/edmc(1-0-35).apk">
+                      EDMC APP
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="http://mohfw.gov.bd/">Ministry of Health</Link>
+                  </li>
+                  <li>
+                    <Link href="http://www.probashi.gov.bd/">
+                      Ministry of EXPATRIATES
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="http://www.boesl.org.bd/">BOESL</Link>
+                  </li>
+                  <li>
+                    <Link href="http://baira.org.bd/">BAIRA</Link>
+                  </li>
+                  <li>
+                    <Link href="http://www.dip.gov.bd/?q=node/55">
+                      PASSPORT
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3  col-md-6">
+            <div className="col-lg-3">
               <div
                 className="single-widget open-time"
                 data-aos="fade-in"
@@ -141,7 +162,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3">
               <div
                 className="single-widget contact"
                 data-aos="fade-in"
