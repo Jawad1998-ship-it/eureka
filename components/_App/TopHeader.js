@@ -25,7 +25,7 @@ const TopHeader = () => {
     <>
       <div className="top-header-area">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-10 col-md-10 col-sm-12">
               <ul className="header-content-left">
                 <li>
@@ -51,7 +51,7 @@ const TopHeader = () => {
             </div>
 
             <div className="col-lg-2 col-md-2 col-sm-12 text-end text-sm-center">
-              <ul className="header-content-right text-center gap-1">
+              {/* <ul className="header-content-right text-center gap-1">
                 <li>
                   <a href="https://www.facebook.com/770650982987141?ref=embed_page" target="_blank">
                     <i className="bx bxl-facebook"></i>
@@ -62,7 +62,12 @@ const TopHeader = () => {
                     <i className="bx bxl-youtube"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
+              <img
+              src="/img/award.png"
+              alt=""
+              style={{ objectFit: "contain", width: "200px", padding: "5px" }}
+            />
             </div>
           </div>
         </div>
