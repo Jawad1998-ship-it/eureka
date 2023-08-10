@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Navbar from "../components/_App/Navbar";
 import MainBanner from "../components/HomeOne/MainBanner";
 import MainBannerCopy from "../components/HomeOne/MainBannerCopy";
@@ -16,11 +16,13 @@ import Subscribe from "../components/Common/Subscribe";
 import Footer from "../components/_App/Footer";
 
 const Index = () => {
+  const headerRef = useRef();
+
   return (
     <>
-      <Navbar />
+      <Navbar headerRef={headerRef} />
 
-      <MainBannerCopy />
+      <MainBannerCopy headerRef={headerRef} />
 
       {/* <Facilities /> */}
 

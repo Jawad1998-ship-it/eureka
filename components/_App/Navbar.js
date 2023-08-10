@@ -4,12 +4,13 @@ import Link from "next/link";
 import TopHeader from "./TopHeader";
 import axios from "axios";
 
-const Navbar = () => {
+const Navbar = ({headerRef}) => {
   // Add active class
   const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
 
   const [currentPath, setCurrentPath] = useState("");
   const [data, setData] = useState({});
+
 
   const router = useRouter();
   // console.log(router.asPath)
@@ -56,7 +57,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="header-area fixed-top">
+      <header ref={headerRef} className="header-area fixed-top">
         <TopHeader />
 
         <div
