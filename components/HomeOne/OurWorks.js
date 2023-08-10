@@ -361,60 +361,6 @@ const OurWorks = () => {
           <img src="/img/shape/work-shape.png" alt="Image" />
         </div>
       </div>
-      <div style={{ overflow: "hidden" }}>
-        <div className="marquee">
-          <div className="slide-wrapper">
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag3.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag4.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag5.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag.jpg"
-                alt="Image 1"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag2.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag3.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag4.jpg"
-                alt="Image 2"
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="https://eurekamedicalbd.com/wp-content/themes/eurekamedicalbd/images/flag5.jpg"
-                alt="Image 2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

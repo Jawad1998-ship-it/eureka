@@ -124,7 +124,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="http://www.probashi.gov.bd/">
-                      Ministry of EXPATRIATES
+                      Ministry of Expatriates
                     </Link>
                   </li>
                   <li>
@@ -135,7 +135,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="http://www.dip.gov.bd/?q=node/55">
-                      PASSPORT
+                      Passport
                     </Link>
                   </li>
                 </ul>

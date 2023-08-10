@@ -67,12 +67,12 @@ const Navbar = () => {
             <img
               src="/img/award.png"
               alt=""
-              style={{ objectFit: "contain", width: "200px", padding: "5px" }}
+              style={{ objectFit: "contain",  padding: "5px" }}
             />
-            <div className="main-nav d-flex align-items-center">
+            <div className="main-nav">
               <nav
                 className="navbar navbar-expand-md navbar-light"
-                style={{ paddingLeft: "80px", flexWrap: "wrap" }}
+                style={{ flexWrap: "wrap" }}
               >
                 <div className="container d-flex align-items-center gap-2">
                   <div className="d-none d-lg-block">
