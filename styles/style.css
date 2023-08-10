@@ -6683,7 +6683,13 @@ Page-navigation Area Style*/
   100%{transform: translateX(-100%);}
 }
 
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+  .marquee{
+      animation: marquee 25s linear infinite;
+  }
 
+}
 .swiper .swiper-wrapper .swiper-slide .slider-inner {
   position: relative;
   height: 940px;
