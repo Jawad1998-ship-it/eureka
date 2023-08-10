@@ -27,6 +27,42 @@ const NewsStyleOne = () => {
           </div>
         </div>
       </div>
+      <div className="our-new-work-area" style={{ overflow: "hidden" }}>
+        <div className="marquee">
+          <div className="slide-wrapper">
+            <div className="slide">
+              <img src="/img/flag.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag2.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag3.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag4.png" alt="Image 1" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag5.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag2.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag3.png" alt="Image 2" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag4.png" alt="Image 1" />
+            </div>
+            <div className="slide">
+              <img src="/img/flag5.png" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
