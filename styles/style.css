@@ -6660,42 +6660,35 @@ Page-navigation Area Style*/
 /*
   flag anumations below
 */
-.slide-container {
-  position: relative;
-  overflow: hidden;
-}
 
-.slide-wrapper {
-  display: flex;
-  width: 500%; /* Set the width to accommodate all slides */
-  animation: rotating 20s linear infinite;
-}
 
-.slide {
-  flex-shrink: 0;
-  width: 20%; /* Adjust the width as needed */
-}
-
-.slide img {
-  max-width: 100%;
-}
-
-@keyframes rotating {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.arrows
+.marquee
 {
-  background-color: red;
-  font-size: 19px;
-  height: 20px;
-  z-index: 1000;
-  cursor: pointer;
+  display: flex;
+  overflow-x: hidden!important;
+}
+
+.slide-wrapper
+{
+  width: 100%;
+  display: flex;
+}
+
+.marquee:hover{
+  animation-play-state: paused;
+}
+
+@keyframes marquee{
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+  .marquee{
+      animation: marquee 25s linear infinite;
+  }
+
 }
 .swiper .swiper-wrapper .swiper-slide .slider-inner {
   position: relative;

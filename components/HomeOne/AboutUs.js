@@ -10,12 +10,12 @@ const AboutUs = () => {
             <div className="col-lg-4 d-md-flex flex-md-column">
               <div className="about-img">
                 <iframe
-                  height="315"
+                  height="280"
                   src="https://www.youtube.com/embed/rW7BbIdMqFQ"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                  style={{width: "100%"}}
+                  style={{ width: "100%" }}
                 ></iframe>
 
                 <div className="shape-1">
@@ -48,18 +48,20 @@ const AboutUs = () => {
                 of body systems, their diseases and treatment and the applied
                 practice of that knowledge.
               </div>
-              <Link className="text-end w-50" href="/about">Read More...</Link>
+              <Link className="text-end w-50" href="/about">
+                Read More...
+              </Link>
               <Link target="_blank" href="https://eurekamedicalbd.com:2096/">
                 <img
                   src="/img/Web-Mail.jpg"
                   width="200px"
                   height="200px"
-                  style={{objectFit: 'contain'}}
+                  style={{ objectFit: "contain" }}
                   alt=""
                 />
               </Link>
             </div>
-            <div className="col-lg-4">
+            {/* <div className="col-lg-3">
               <div className="about-content">
                 <p>
                   Eureka Diagnostic & Medical Center, have been operation since
@@ -77,6 +79,33 @@ const AboutUs = () => {
                   locations offer convenient, surface level parking for easy
                   access in and out of our centers.
                 </p>
+              </div>
+            </div> */}
+            <div className="col-lg-4 d-flex flex-column gap-3">
+              <div className="about-registration mt-2">
+                <Link href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`}>
+                  <img
+                    src="/img/Registration.png"
+                    style={{ cursor: "pointer", width: "100%"}}
+                    alt=""
+                  />
+                </Link>
+              </div>
+              <div className="d-flex gap-3 justify-content-center">
+                <Link href="/contact/">
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src="/img/company-profile.jpg"
+                    alt=""
+                  />
+                </Link>
+                <Link href="/contact/">
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src="/img/guideline.png"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </div>

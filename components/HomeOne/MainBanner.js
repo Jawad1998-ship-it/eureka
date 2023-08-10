@@ -72,10 +72,10 @@ const MainBanner = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-sm-12 pr-0">
+                <div className="col-lg-6 col-sm-12">
                   <div className="banner-img-wrap">
                     <div
-                      className="banner-img w-100 text-lg-end text-md-center"
+                      className="banner-img w-100 text-lg-end text-md-center d-flex align-items-center justify-content-end"
                       data-aos="fade-up"
                       data-aos-delay="600"
                       data-aos-duration="1200"
@@ -84,9 +84,7 @@ const MainBanner = () => {
                         src="/img/banner.png"
                         alt="Image"
                         style={{
-                          height: "800px",
-                          width: "70%",
-                          objectFit: "cover",
+                          objectFit: "contain",
                         }}
                       />
                     </div>
