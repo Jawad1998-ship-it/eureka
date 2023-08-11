@@ -4,13 +4,12 @@ import Link from "next/link";
 import TopHeader from "./TopHeader";
 import axios from "axios";
 
-const Navbar = ({headerRef}) => {
+const Navbar = ({ headerRef }) => {
   // Add active class
   const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
 
   const [currentPath, setCurrentPath] = useState("");
   const [data, setData] = useState({});
-
 
   const router = useRouter();
   // console.log(router.asPath)
@@ -70,7 +69,7 @@ const Navbar = ({headerRef}) => {
               alt=""
               style={{ objectFit: "contain", width: "200px", padding: "5px" }}
             /> */}
-            <div className="justify-content-center main-nav d-flex align-items-center">
+            <div className="main-nav d-lg-flex align-items-center justify-content-center">
               <nav
                 className="navbar navbar-expand-md navbar-light"
                 style={{ flexWrap: "wrap" }}
@@ -105,7 +104,7 @@ const Navbar = ({headerRef}) => {
                   </button>
 
                   <div className={classOne} id="navbarSupportedContent">
-                    <ul className="navbar-nav m-auto">
+                    <ul className="navbar-nav mx-auto d-flex align-items-center">
                       <li className="nav-item">
                         <Link
                           href="/"
@@ -199,18 +198,16 @@ const Navbar = ({headerRef}) => {
                           Contact
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <button className="default-btn">
+                          <Link
+                            href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
+                          >
+                            Medical Verification
+                          </Link>
+                        </button>
+                      </li>
                     </ul>
-                  </div>
-
-                  <div className="others-option">
-                    <div className="subscribe">
-                      <Link
-                        href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
-                        className="default-btn"
-                      >
-                        Medical Verification
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </nav>
