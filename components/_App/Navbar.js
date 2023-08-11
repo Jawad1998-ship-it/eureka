@@ -194,13 +194,14 @@ const Navbar = ({ headerRef }) => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <button className="default-btn">
-                          <Link
-                            href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
-                          >
+                        <Link
+                          href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
+                        >
+                          {" "}
+                          <button className="default-btn">
                             Medical Verification
-                          </Link>
-                        </button>
+                          </button>
+                        </Link>
                       </li>
                     </ul>
                   </div>

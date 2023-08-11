@@ -7,13 +7,13 @@ const MainBanner = ({ headerRef }) => {
   const [heroGap, setHeroGap] = useState()
 
   useEffect(() => {
-    setHeroGap(headerRef.current?.offsetHeight)
+    if (window.innerWidth > 992) {
+      setHeroGap(headerRef.current?.offsetHeight)
+    }
   }, [headerRef.current])
-
-  console.log(headerRef)
   
   return (
-    <div className="" style={{paddingTop: `140px`}}>
+    <div className="" style={{paddingTop: `${heroGap}px`}}>
       <Swiper
         modules={[Autoplay, Navigation, EffectFade]}
         effect="fade"

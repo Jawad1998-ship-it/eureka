@@ -26,19 +26,19 @@ const TopHeader = () => {
       <div className="top-header-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-10 col-md-10 col-sm-12">
-              <ul className="header-content-left">
+            <div className="col-lg-10 col-md-10 col-8">
+              <ul className="header-content-left d-sm-flex">
                 <li>
                   <i className="bx bx-time"></i>
                   Mon-Fri 9AM-5PM
                 </li>
                 <li>
-                  <a href="tel:+822456974" className="d-lg-flex align-items-center d-md-flex gap-2">
+                  <a href="tel:+822456974" className="d-lg-flex align-items-center justify-content-start d-md-flex gap-2">
                     <div>
                       <i className="bx bx-phone-call"></i>
                       Call Us:
                     </div>
-                    <span>{data?.mobile}</span>
+                    <span>{data?.mobile?.split(",")[0]}</span>
                   </a>
                 </li>
                 <li>
@@ -50,7 +50,7 @@ const TopHeader = () => {
               </ul>
             </div>
 
-            <div className="col-lg-2 col-md-2 col-sm-12 text-end text-sm-center">
+            <div className="col-lg-2 col-md-2 col-4 text-end text-sm-center">
               {/* <ul className="header-content-right text-center gap-1">
                 <li>
                   <a href="https://www.facebook.com/770650982987141?ref=embed_page" target="_blank">
