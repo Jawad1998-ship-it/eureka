@@ -6718,3 +6718,8 @@ Page-navigation Area Style*/
   background-size: cover;
   height: 100%;
 }
+
+.header-area .top-header-area
+{
+  padding: 0;
+}

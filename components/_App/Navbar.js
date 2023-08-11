@@ -64,11 +64,6 @@ const Navbar = ({ headerRef }) => {
 "
         >
           <div id="navbar" className="navbar-area d-flex">
-            {/* <img
-              src="/img/award.png"
-              alt=""
-              style={{ objectFit: "contain", width: "200px", padding: "5px" }}
-            /> */}
             <div className="main-nav d-lg-flex align-items-center justify-content-center">
               <nav
                 className="navbar navbar-expand-md navbar-light"

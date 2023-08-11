@@ -13,7 +13,7 @@ const MainBanner = ({ headerRef }) => {
   console.log(headerRef)
   
   return (
-    <div className="" style={{paddingTop: `${heroGap}px`}}>
+    <div className="" style={{paddingTop: `140px`}}>
       <Swiper
         modules={[Autoplay, Navigation, EffectFade]}
         effect="fade"

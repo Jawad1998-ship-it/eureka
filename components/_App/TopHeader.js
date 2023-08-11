@@ -66,7 +66,7 @@ const TopHeader = () => {
               <img
               src="/img/award.png"
               alt=""
-              style={{ objectFit: "contain", width: "200px", padding: "5px" }}
+              style={{ objectFit: "contain", width: "120px", padding: "5px" }}
             />
             </div>
           </div>
