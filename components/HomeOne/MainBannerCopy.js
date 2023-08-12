@@ -10,8 +10,6 @@ const MainBanner = ({ headerRef }) => {
     setHeroGap(headerRef.current?.offsetHeight)
   }, [headerRef.current])
 
-  console.log(headerRef)
-  
   return (
     <div className="" style={{paddingTop: `${heroGap}px`}}>
       <Swiper

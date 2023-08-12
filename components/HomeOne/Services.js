@@ -31,10 +31,6 @@ const Services = () => {
                   for precise diagnoses you can rely on.
                 </p>
 
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
-
                 <div className="services-shape">
                   <img src="/img/services-card-shape.png" alt="Image" />
                 </div>
@@ -55,10 +51,6 @@ const Services = () => {
                   delivers clear insights for better healthcare decisions.
                 </p>
 
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
-
                 <div className="services-shape">
                   <img src="/img/services-card-shape.png" alt="Image" />
                 </div>
@@ -78,10 +70,6 @@ const Services = () => {
                   Comprehensive care, expert guidance. Experience tailored
                   treatments and therapies in our physical department.
                 </p>
-
-                <Link href="/service-details" className="read-more">
-                  Read More <i className="bx bx-plus"></i>
-                </Link>
 
                 <div className="services-shape">
                   <img src="/img/services-card-shape.png" alt="Image" />

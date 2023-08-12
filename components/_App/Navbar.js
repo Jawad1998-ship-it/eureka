@@ -4,16 +4,15 @@ import Link from "next/link";
 import TopHeader from "./TopHeader";
 import axios from "axios";
 
-const Navbar = ({headerRef}) => {
+const Navbar = ({ headerRef }) => {
   // Add active class
   const settingURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/settings`;
 
   const [currentPath, setCurrentPath] = useState("");
   const [data, setData] = useState({});
 
-
   const router = useRouter();
-  // console.log(router.asPath)
+
   const getData = () => {
     axios
       .get(settingURL)
@@ -70,7 +69,7 @@ const Navbar = ({headerRef}) => {
               alt=""
               style={{ objectFit: "contain", width: "200px", padding: "5px" }}
             /> */}
-            <div className="justify-content-center main-nav d-flex align-items-center">
+            <div className="main-nav">
               <nav
                 className="navbar navbar-expand-md navbar-light"
                 style={{ flexWrap: "wrap" }}
@@ -118,24 +117,48 @@ const Navbar = ({headerRef}) => {
 
                       <li className="nav-item">
                         <Link
-                          href="/about"
-                          className={`nav-link ${
-                            currentPath == "/about/" && "active"
-                          }`}
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                          className="nav-link"
                         >
-                          About
+                          Company <i className="bx bx-plus"></i>
                         </Link>
+
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
+                            <Link
+                              href="/about"
+                              className={`nav-link ${
+                                currentPath == "/about/" && "active"
+                              }`}
+                            >
+                              About
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="/messages"
+                              className={`nav-link ${
+                                currentPath == "/messages/" && "active"
+                              }`}
+                            >
+                              Messages
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="certifications"
+                              // onClick={(e) => e.preventDefault()}
+                              className="nav-link"
+                            >
+                              Certifications {/* <i className="bx bx-plus"></i> */}
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/messages"
-                          className={`nav-link ${
-                            currentPath == "/messages/" && "active"
-                          }`}
-                        >
-                          Messages
-                        </Link>
-                      </li>
+
                       <li className="nav-item">
                         <Link
                           href="/health-packages"
@@ -159,34 +182,35 @@ const Navbar = ({headerRef}) => {
 
                       <li className="nav-item">
                         <Link
-                          href="/videos"
-                          className={`nav-link ${
-                            currentPath == "/videos/" && "active"
-                          }`}
-                        >
-                          Videos
-                        </Link>
-                      </li>
-
-                      <li className="nav-item"></li>
-                      <li className="nav-item">
-                        <Link
-                          href="photo-gallery"
-                          // onClick={(e) => e.preventDefault()}
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
                           className="nav-link"
                         >
-                          Photo Gallery {/* <i className="bx bx-plus"></i> */}
+                          Media <i className="bx bx-plus"></i>
                         </Link>
-                      </li>
 
-                      <li className="nav-item">
-                        <Link
-                          href="certifications"
-                          // onClick={(e) => e.preventDefault()}
-                          className="nav-link"
-                        >
-                          Certifications {/* <i className="bx bx-plus"></i> */}
-                        </Link>
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
+                            <Link
+                              href="/videos"
+                              className={`nav-link ${
+                                currentPath == "/videos/" && "active"
+                              }`}
+                            >
+                              Videos
+                            </Link>
+                          </li>
+
+                          <li className="nav-item">
+                            <Link
+                              href="photo-gallery"
+                              // onClick={(e) => e.preventDefault()}
+                              className="nav-link"
+                            >
+                              Photo Gallery {/* <i className="bx bx-plus"></i> */}
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
 
                       <li className="nav-item">
