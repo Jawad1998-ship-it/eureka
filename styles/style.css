@@ -6526,7 +6526,7 @@ Page-navigation Area Style*/
   }
 }
 .page-title-area {
-  padding-top: 174px;
+  padding-top: 225px;
   padding-bottom: 80px;
 }
 /* header area style */
@@ -6717,4 +6717,9 @@ Page-navigation Area Style*/
   background-position: center center;
   background-size: cover;
   height: 100%;
+}
+
+.header-area .top-header-area
+{
+  padding: 0;
 }

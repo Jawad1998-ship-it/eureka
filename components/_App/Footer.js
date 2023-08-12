@@ -27,7 +27,7 @@ const Footer = () => {
     <>
       <footer className="footer-top-area f-bg pt-100 pb-70">
         <div className="container">
-          <div className="row" style={{ flexWrap: 'wrap'}}>
+          <div className="row" style={{ flexWrap: "wrap" }}>
             <div className="col-lg-2">
               <div
                 className="single-widget"
@@ -84,11 +84,29 @@ const Footer = () => {
                 data-aos-delay="200"
                 data-aos-duration="1200"
               >
-                <h3>Departments</h3>
+                <h3>Quick Links</h3>
                 <ul>
-                  <li>Pathology</li>
-                  <li>Physiology</li>
-                  <li>Radiology</li>
+                  <li>
+                    <Link href="/messages">Messages</Link>
+                  </li>
+                  <li>
+                    <Link href="/certifications">Certifications</Link>
+                  </li>
+                  <li>
+                    <Link href="/health-packages">Health Packages</Link>
+                  </li>
+                  <li>
+                    <Link href="/photo-gallery">Photo Gallery</Link>
+                  </li>
+                  <li>
+                    <Link href="/blogs">Blogs</Link>
+                  </li>
+                  <li>
+                    <Link href="/videos">Videos</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact</Link>
+                  </li>
                 </ul>
               </div>
             </div>

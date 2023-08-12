@@ -70,10 +70,7 @@ const Navbar = ({ headerRef }) => {
               style={{ objectFit: "contain", width: "200px", padding: "5px" }}
             /> */}
             <div className="main-nav">
-              <nav
-                className="navbar navbar-expand-md navbar-light"
-                style={{ flexWrap: "wrap" }}
-              >
+              <nav className="navbar navbar-expand-md navbar-light">
                 <div className="container d-flex align-items-center gap-2">
                   <div className="d-none d-lg-block">
                     <Link href="/" className="navbar-brand">
@@ -104,7 +101,7 @@ const Navbar = ({ headerRef }) => {
                   </button>
 
                   <div className={classOne} id="navbarSupportedContent">
-                    <ul className="navbar-nav m-auto">
+                    <ul className="navbar-nav mx-auto d-flex align-items-center">
                       <li className="nav-item">
                         <Link
                           href="/"
@@ -153,7 +150,8 @@ const Navbar = ({ headerRef }) => {
                               // onClick={(e) => e.preventDefault()}
                               className="nav-link"
                             >
-                              Certifications {/* <i className="bx bx-plus"></i> */}
+                              Certifications{" "}
+                              {/* <i className="bx bx-plus"></i> */}
                             </Link>
                           </li>
                         </ul>
@@ -172,7 +170,7 @@ const Navbar = ({ headerRef }) => {
 
                       <li className="nav-item">
                         <Link
-                          href="/services-2"
+                          href="/services"
                           // onClick={(e) => e.preventDefault()}
                           className="nav-link"
                         >
@@ -207,7 +205,8 @@ const Navbar = ({ headerRef }) => {
                               // onClick={(e) => e.preventDefault()}
                               className="nav-link"
                             >
-                              Photo Gallery {/* <i className="bx bx-plus"></i> */}
+                              Photo Gallery{" "}
+                              {/* <i className="bx bx-plus"></i> */}
                             </Link>
                           </li>
                         </ul>
@@ -223,18 +222,17 @@ const Navbar = ({ headerRef }) => {
                           Contact
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link
+                          href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
+                        >
+                          {" "}
+                          <button className="default-btn">
+                            Medical Verification
+                          </button>
+                        </Link>
+                      </li>
                     </ul>
-                  </div>
-
-                  <div className="others-option">
-                    <div className="subscribe">
-                      <Link
-                        href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/medical-verification`}
-                        className="default-btn"
-                      >
-                        Medical Verification
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </nav>

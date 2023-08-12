@@ -40,7 +40,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="col-lg-4 d-flex flex-column gap-3 align-items-center justify-content-center">
-              <div className="about-content w-50">
+              <div className="about-content">
                 Medicine is the branch of health science and the sector of
                 public life concerned with maintaining or restoring human health
                 through the study, diagnosis, treatment and possible prevention

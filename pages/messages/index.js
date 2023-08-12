@@ -5,7 +5,6 @@ import Footer from "../../components/_App/Footer";
 import Link from "next/link";
 
 const messages = () => {
-
   return (
     <>
       <Navbar />
