@@ -101,7 +101,7 @@ const Navbar = ({ headerRef }) => {
                   </button>
 
                   <div className={classOne} id="navbarSupportedContent">
-                    <ul className="navbar-nav mx-auto d-flex align-items-center">
+                    <ul className="navbar-nav ms-auto d-flex align-items-center">
                       <li className="nav-item">
                         <Link
                           href="/"
