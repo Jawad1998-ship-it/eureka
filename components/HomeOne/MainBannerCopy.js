@@ -27,7 +27,7 @@ const MainBanner = ({ headerRef }) => {
             className="slider-inner"
             style={{
               background:
-                "url('/img/slideshow-one.jpg') no-repeat top / cover",
+                "url('/img/slider-one.jpg') no-repeat top / cover",
             }}
           ></div>
         </SwiperSlide>
@@ -36,7 +36,7 @@ const MainBanner = ({ headerRef }) => {
             className="slider-inner"
             style={{
               background:
-                "url('/img/slideshow-two.jpeg') no-repeat top / cover",
+                "url('/img/slider-two.jpg') no-repeat top / cover",
             }}
           ></div>
         </SwiperSlide>
@@ -45,7 +45,7 @@ const MainBanner = ({ headerRef }) => {
             className="slider-inner"
             style={{
               background:
-                "url('/img/slideshow-three.jpg') no-repeat top / cover",
+                "url('/img/slider-three.jpg') no-repeat top / cover",
             }}
           ></div>
         </SwiperSlide>
@@ -54,16 +54,7 @@ const MainBanner = ({ headerRef }) => {
             className="slider-inner"
             style={{
               background:
-                "url('/img/slideshow-four.jpeg') no-repeat top / cover",
-            }}
-          ></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-inner"
-            style={{
-              background:
-                "url('/img/slideshow-five.jpg') no-repeat top / cover",
+                "url('/img/slider-four.jpg') no-repeat top / cover",
             }}
           ></div>
         </SwiperSlide>
